@@ -1,0 +1,74 @@
+# ==============================
+# 操作系统生成文件
+# ==============================
+.DS_Store     # macOS 属性文件
+Thumbs.db     # Windows 缩略图缓存
+Desktop.ini   # Windows 目录配置
+
+# ==============================
+# 开发环境 & 构建产物
+# ==============================
+/build/       # 编译输出目录
+/dist/
+/target/
+*.exe         # 可执行文件
+*.dll
+*.class       # Java 字节码
+
+# ==============================
+# 依赖管理 (按需保留一项)
+# ==============================
+__pycache__/
+
+# ==============================
+# 配置文件 (本地覆盖)
+# ==============================
+.env           # 环境变量（包含敏感信息）
+.local.env
+config.local.*
+secrets.ini    # 密钥文件
+config/alembic.ini
+
+# ==============================
+# 日志 & 运行时文件
+# ==============================
+*.log          # 应用日志
+/logs/        # 日志目录
+*.sqlite       # 本地数据库文件
+*.pid
+*.seed
+*.error
+cache/
+/tmp/
+
+# /alembic/
+/config/
+
+# ==============================
+# 数据集和静态文件
+# ==============================
+/dataset/
+/static/
+/config/*
+!config/loadConfig.py
+db_backups/
+
+# ==============================
+# IDE & 编辑器配置
+# ==============================
+.idea        # JetBrains IDEs
+.vscode/      # Visual Studio Code
+*.sublime-workspace  # Sublime Text 工作区
+/.idea/backend.iml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/misc.xml
+/.idea/vcs.xml
+/.idea/neo_backend.iml
+
+# ==============================
+# 特定模块的忽略规则
+# ==============================
+# 忽略 chinatravel 工具的数据库、计划和评估数据
+src/modules/services/service_basis/travel_tool/chinatravel/environment/database/
+src/modules/services/service_basis/travel_tool/chinatravel/evaluation/
